@@ -3,76 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>The Freedom Desk</title>
-  <meta name="description" content="The Freedom Desk — News, Politics, America.">
+  <meta name="description" content="The Freedom Desk — News, stories, opinions, and conversation.">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="top">
-    <div class="brand">
-      <img src="logo.jpeg" alt="The Freedom Desk logo">
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
+    <div class="logo-area">
+      <div class="logo">FD</div>
+
       <div>
-        <h1>THE FREEDOM DESK</h1>
-        <p>News • Politics • America</p>
+        <h1>The Freedom Desk</h1>
+        <p>News • Stories • Conversation</p>
       </div>
     </div>
+
     <nav>
-      <a href="#latest">Latest</a>
-      <a href="#politics">Politics</a>
-      <a href="#kentucky">Kentucky</a>
-      <a href="#opinion">Opinion</a>
+      <a href="#news">News</a>
       <a href="#podcast">Podcast</a>
+      <a href="#join">Join Us</a>
     </nav>
+
   </header>
 
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="small-title">THE FREEDOM DESK</p>
+
+      <h2>
+        News.<br>
+        Opinions.<br>
+        <span>Your Voice.</span>
+      </h2>
+
+      <p class="hero-text">
+        Independent news, stories, and conversations from The Freedom Desk.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#news" class="button white-button">
+          Read Latest
+        </a>
+
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScNLHHaoxU4g_VGRYzSedb4ZjF_d8M8PlV73TnmTn6ckaiWRg/viewform"
+          target="_blank"
+          class="button outline-button"
+        >
+          Join the Show
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= NEWS ================= -->
+
   <main>
-    <section class="hero">
-      <p class="eyebrow">INDEPENDENT NEWS & COMMENTARY</p>
-      <h2>America, without the filter.</h2>
-      <p class="hero-text">News, politics and stories from Kentucky and across the country.</p>
-      <a class="button" href="#latest">Read the latest</a>
+
+    <section id="news" class="news-section">
+
+      <p class="small-title">LATEST</p>
+
+      <h2>Latest Stories</h2>
+
+      <div id="stories" class="stories-container"></div>
+
     </section>
 
-    <section id="latest" class="section">
-      <div class="section-title">
-        <h2>Latest</h2><span>THE FREEDOM DESK</span>
-      </div>
-      <div id="latest-grid" class="grid"></div>
-    </section>
 
-    <section id="politics" class="section alt">
-      <div class="section-title"><h2>Politics</h2></div>
-      <div id="politics-grid" class="grid"></div>
-    </section>
+    <!-- ================= PODCAST ================= -->
 
-    <section id="kentucky" class="section">
-      <div class="section-title"><h2>Kentucky</h2></div>
-      <div id="kentucky-grid" class="grid"></div>
-    </section>
+    <section id="podcast" class="podcast-section">
 
-    <section id="opinion" class="section alt">
-      <div class="section-title"><h2>Opinion</h2></div>
-      <div id="opinion-grid" class="grid"></div>
-    </section>
-
-    <section id="podcast" class="podcast">
       <div>
-        <p class="eyebrow">THE FREEDOM DESK PODCAST</p>
-        <h2>Listen. Think. Speak freely.</h2>
-        <p>New episodes, interviews and commentary.</p>
+
+        <p class="small-title">LISTEN NOW</p>
+
+        <h2>The Freedom Desk Podcast</h2>
+
+        <p>
+          Listen to the latest episodes and conversations from The Freedom Desk.
+        </p>
+
       </div>
-      <a class="button light" href="#">Coming soon</a>
+
+      <a
+        href="https://open.spotify.com/show/3hEgsLUjadviXTO7vknCHQ"
+        target="_blank"
+        class="button dark-button"
+      >
+        🎙️ Listen on Spotify
+      </a>
+
     </section>
+
+
+    <!-- ================= JOIN ================= -->
+
+    <section id="join" class="join-section">
+
+      <p class="small-title">WANT TO BE ON THE SHOW?</p>
+
+      <h2>Join The Freedom Desk</h2>
+
+      <p>
+        Have something to say? Want to share your story or join the conversation?
+        Fill out the form and we'll take a look.
+      </p>
+
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScNLHHaoxU4g_VGRYzSedb4ZjF_d8M8PlV73TnmTn6ckaiWRg/viewform"
+        target="_blank"
+        class="button white-button"
+      >
+        📝 Apply to Join
+      </a>
+
+    </section>
+
   </main>
 
+
+  <!-- ================= FOOTER ================= -->
+
   <footer>
-    <div class="brand small">
-      <img src="logo.jpeg" alt="">
-      <div><strong>THE FREEDOM DESK</strong><p>News • Politics • America</p></div>
+
+    <div class="footer-brand">
+
+      <div class="logo">FD</div>
+
+      <div>
+        <strong>The Freedom Desk</strong>
+        <p>News • Stories • Conversation</p>
+      </div>
+
     </div>
-    <p>© 2026 The Freedom Desk. All rights reserved.</p>
+
+
+    <div class="social-links">
+
+      <a
+        href="https://open.spotify.com/show/3hEgsLUjadviXTO7vknCHQ"
+        target="_blank"
+      >
+        Spotify
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@thefreedomdesk"
+        target="_blank"
+      >
+        TikTok
+      </a>
+
+    </div>
+
+
+    <p class="copyright">
+      © 2026 The Freedom Desk
+    </p>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
