@@ -1,53 +1,96 @@
-// ===============================
-// EDIT YOUR WEBSITE HERE
-// ===============================
-// To add a story, copy one of these objects,
-// change the title/category/text, and save.
-//
-// category must be: Latest, Politics, Kentucky, or Opinion.
+/*
+====================================================
+       THE FREEDOM DESK — STORIES
+====================================================
+
+To add a new story:
+
+1. Copy one of the story blocks below.
+2. Paste it ABOVE the other stories.
+3. Change the title.
+4. Change the date.
+5. Change the description.
+6. Put the article link in "link".
+
+Example:
+
+{
+  title: "My New Story",
+  date: "September 1, 2026",
+  description: "This is what the story is about.",
+  link: "https://example.com"
+}
+
+====================================================
+*/
+
 
 const stories = [
+
+  /* ===== STORY 1 ===== */
+
   {
-    category: "Latest",
-    title: "Your first Freedom Desk story",
-    text: "Replace this with your latest headline and a short description of the story."
+    title: "Welcome to The Freedom Desk",
+    date: "August 31, 2026",
+    description:
+      "Welcome to the new home of The Freedom Desk. Check back here for the latest stories, updates, and conversations.",
+    link: "#"
   },
+
+
+  /* ===== STORY 2 ===== */
+
   {
-    category: "Politics",
-    title: "Politics story goes here",
-    text: "Add your political news, reporting, or commentary here."
-  },
-  {
-    category: "Kentucky",
-    title: "Kentucky story goes here",
-    text: "Cover Kentucky, Ashland, Boyd County, or other local stories here."
-  },
-  {
-    category: "Opinion",
-    title: "Your opinion goes here",
-    text: "Use this section for clearly labeled opinion and commentary."
+    title: "Your First Story Goes Here",
+    date: "September 1, 2026",
+    description:
+      "Replace this story with your first real news story.",
+    link: "#"
   }
+
 ];
 
-function makeCard(story){
+
+
+/*
+====================================================
+       DON'T EDIT BELOW THIS LINE
+====================================================
+*/
+
+const storyContainer = document.getElementById("stories");
+
+
+storyContainer.innerHTML = stories.map(story => {
+
   return `
-    <article class="card">
-      <div class="card-img">THE FREEDOM DESK</div>
-      <div class="card-body">
-        <div class="tag">${story.category.toUpperCase()}</div>
-        <h3>${story.title}</h3>
-        <p>${story.text}</p>
+
+    <article class="story-card">
+
+      <div class="story-date">
+        ${story.date}
       </div>
-    </article>`;
-}
 
-function fill(id, category){
-  const items = stories.filter(s => s.category === category);
-  document.getElementById(id).innerHTML =
-    items.length ? items.map(makeCard).join("") : "<p>No stories yet.</p>";
-}
+      <h3>
+        ${story.title}
+      </h3>
 
-fill("latest-grid","Latest");
-fill("politics-grid","Politics");
-fill("kentucky-grid","Kentucky");
-fill("opinion-grid","Opinion");
+      <p>
+        ${story.description}
+      </p>
+
+      ${
+        story.link !== "#"
+        ?
+        `<a href="${story.link}" target="_blank">
+          Read More →
+        </a>`
+        :
+        ""
+      }
+
+    </article>
+
+  `;
+
+}).join("");
